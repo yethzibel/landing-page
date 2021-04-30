@@ -7,25 +7,89 @@
 	<title>Sneakers Yezzy</title>
 </head>
 <body>
-	<header>
+	<header id="header">
 		<div id="header-img">
 			<img class="logo" src="image/logo.jpg" alt="logo from Yezzy">
 		</div>
 
 		<nav id="nav-bar">
 			<ul>
-				<li><a class="nav-link" href="Home">HOME</a></li>
-				<li><a class="nav-link" href="Overview">OVERVIEW</a></li>
-				<li><a class="nav-link" href="Shop">SHOP</a></li>
-				<li><a class="nav-link" href="Contac us">CONTAC US</a></li>
+				<li><a class="nav-link" href=#hero>HOME</a></li>
+				<li><a class="nav-link" href=#overview>OVERVIEW</a></li>
+				<li><a class="nav-link" href=#shop>SHOP</a></li>
+				<li><a class="nav-link" href=#form>CONTAC US</a></li>
 			</ul>
 		</nav>
 
 	</header>
+
 	<div class="container">
-		<h1 class="title">Introducing the Yeezy Boost 350</h1>
-		<h1 class="text-hero">YEZZY</h1>
-		<img class="first-yezzy" src="image/yezzy.png" alt="sneaker yezzy">
+		<section class="hero" id="hero">
+			<img src="image/b.png" alt="Sneakers Yeezy BOOST 350 V2" class="hero-img">
+			<p class="p-1">YEZZY BOOST 350 V2</p>
+		<div class="p-2">
+			<div class="text">
+				<p>black</p>
+				<p>$300</p>
+				<p>free shipping</p>
+			</div>
+		</div>
+		<div class="cta">
+			<button type="button" id="submit" class="cta-btn">ORDER NOW</button>
+		</div>
+		</section>
+
+		<section id="overview">
+			<iframe id="video" width="500" height="300" src="https://www.youtube.com/embed/_PN1JBKM2j8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		
+			<div class="text-overview">
+				<h1>adidas Yeezy</h1>
+				<p>Buy the best sneakers at adidas Yeezys. From Antlia to Zebra, we have all Yeezy silhouettes and colourways, in all sizes. Buy below.</p>
+			</div>
+		</section>
+
+		<section class="shop" id="shop">
+			<div class="card">
+				<img class="img-card" src="image/product-edit-3.png">
+				<div class="text-card">
+					<p>adidas Yeezy Boots 350 v2 Black</p>
+					<h2>$350</h2>
+				</div>
+				<div class="btn">
+					<button type="button" id="submit" class="btn-cta">BUY</button>
+				</div>
+			</div>
+			<div class="card">
+				<img class="img-card" src="image/product-edit.png">
+				<div class="text-card">
+					<p>adidas Yeezy Boots 350 v2 Black Red</p>
+					<h2>$620</h2>
+				</div>
+				<div class="btn">
+					<button type="button" id="submit" class="btn-cta">BUY</button>
+				</div>
+			</div>
+			<div class="card">
+				<img class="img-card" src="image/product-edit-2.png">
+				<div class="text-card">
+					<p>adidas Yeezy Boots 350 v2 Zebra</p>
+					<h2>$510</h2>
+				</div>
+				<div class="btn">
+					<button type="button" id="submit" class="btn-cta">BUY</button>
+				</div>
+			</div>
+		</section>
+
+		<form id="form">
+		    <label id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" placeholder="A #e2dddd placeholder text" required><br>
+          	<label id="email-label">Email:</label>
+          	<input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+          	<input type="submit" formaction="https://www.freecodecamp.org/email-submit" name="submit" class="submit-button">
+		</form>
+
 	</div>
 
 </body>
